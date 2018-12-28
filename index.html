@@ -15,7 +15,8 @@
       </div>
       <div class="product-info">
         <h1>{{ product }}</h1>
-        <a :href="link" target="_blank">More products like this</a>
+        <p v-show="inStock">In Stock</p>
+        <p v-show="onSale">On Sale!</p>
       </div>
     </div>
   </div>
